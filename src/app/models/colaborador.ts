@@ -7,4 +7,9 @@ export class Colaborador {
     salario!: number;
     cargo!: string;
     cargoConfianca!: boolean;
+
+    constructor(id: number, nomeCompleto: string){
+        this.id = id;
+        this.nomeCompleto = nomeCompleto;
+    }
 }

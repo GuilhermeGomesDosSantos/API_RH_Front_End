@@ -1,1 +1,39 @@
-<p>colaboradorlist works!</p>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Listagem de colaboradores</h3>
+                    <div class="direita">
+                <button type="button" class="btn btn-primary btn-rounded" mdbRipple routerLink="/admin/colaboradores/new">Novo</button>
+</div>
+<br>
+                    <table border="1" class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome Completo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (listaColaborador of lista; track $index) {
+                            <tr>
+                                <td>{{listaColaborador.id}}</td>
+                                <td>{{listaColaborador.nomeCompleto}}</td>
+                                <td class="direita">
+                                    <button type="button" class="btn btn-primary btn-rounded" mdbRipple routerLink="/admin/colaboradores/edit/{{listaColaborador.id}}">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger btn-rounded" mdbRipple (click)="deletar()">Deletar</button>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

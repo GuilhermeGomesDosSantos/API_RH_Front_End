@@ -1,6 +1,14 @@
 @use 'mdb-angular-ui-kit/assets/scss/mdb.scss';
 @import '@fortawesome/fontawesome-free/css/all.css';
 
-p {
-  color: blueviolet;
+.centralizar{
+  text-align: center;
+}
+
+.direita{
+  text-align: right;
+}
+
+body{
+  background-color: aqua;
 }
