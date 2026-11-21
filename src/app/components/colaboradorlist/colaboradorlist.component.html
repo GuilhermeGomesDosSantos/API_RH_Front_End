@@ -1,4 +1,27 @@
-<p>colaboradorlist works!</p>
-<p>Teste1</p>
-<p>Teste2</p>
-<p>Teste3</p>
+<table class="minhaTabela" border="1">
+    <thead>
+        <tr>
+            <th>Nome Completo</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Cidade</th>
+            <th>Salario</th>
+            <th>Cargo</th>
+            <th>Cargo Confianca</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @for (colaborador of list; track $index) {
+        <tr>
+            <td>{{colaborador.nomeCompleto}}</td>
+            <td>{{colaborador.idade}}</td>
+            <td>{{colaborador.sexo}}</td>
+            <td>{{colaborador.cidade}}</td>
+            <td>{{colaborador.salario}}</td>
+            <td>{{colaborador.cargo}}</td>
+            <td>{{colaborador.cargoConfianca}}</td>
+        </tr>
+    }
+    </tbody>
+</table>
