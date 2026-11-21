@@ -1,3 +1,6 @@
-p{
-    color: blueviolet;
+@use 'mdb-angular-ui-kit/assets/scss/mdb.scss';
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+p {
+  color: blueviolet;
 }
